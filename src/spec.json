@@ -1,0 +1,249 @@
+{
+  "title": "Gestione prenotazioni sale riunioni",
+  "description": "Prototipo navigabile per consultare la disponibilità settimanale e gestire prenotazioni inventate delle sale di un ufficio comunale.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo delle prenotazioni e della disponibilità delle sale nella settimana corrente.",
+      "metrics": [
+        {
+          "label": "Sale disponibili",
+          "value": "4"
+        },
+        {
+          "label": "Prenotazioni settimanali",
+          "value": "18"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "42"
+        },
+        {
+          "label": "Richieste da confermare",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:00–10:00",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Martedì",
+          "11:00–12:30",
+          "Da confermare"
+        ],
+        [
+          "Nubi",
+          "Mercoledì",
+          "14:00–15:00",
+          "Confermata"
+        ],
+        [
+          "Riva",
+          "Giovedì",
+          "10:00–11:00",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario-settimanale",
+      "title": "Calendario settimanale",
+      "description": "Vista settimanale delle fasce occupate e libere per ciascuna sala.",
+      "metrics": [
+        {
+          "label": "Fasce occupate",
+          "value": "18"
+        },
+        {
+          "label": "Fasce libere",
+          "value": "62"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Lunedì",
+        "Martedì",
+        "Mercoledì",
+        "Giovedì",
+        "Venerdì"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "09:00–10:00",
+          "Libera",
+          "13:00–14:00",
+          "Libera",
+          "10:00–11:00"
+        ],
+        [
+          "Vela",
+          "Libera",
+          "11:00–12:30",
+          "Libera",
+          "09:00–10:00",
+          "Libera"
+        ],
+        [
+          "Nubi",
+          "10:00–11:00",
+          "Libera",
+          "14:00–15:00",
+          "Libera",
+          "13:00–14:00"
+        ],
+        [
+          "Riva",
+          "Libera",
+          "09:00–10:00",
+          "Libera",
+          "10:00–11:00",
+          "Libera"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Prenotazioni",
+      "description": "Consulta e filtra le prenotazioni registrate; usa i filtri della tabella per sala, giorno o stato.",
+      "metrics": [
+        {
+          "label": "Totale",
+          "value": "18"
+        },
+        {
+          "label": "Confermate",
+          "value": "15"
+        },
+        {
+          "label": "Da confermare",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Sala",
+        "Giorno",
+        "Data",
+        "Inizio",
+        "Fine",
+        "Richiedente",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "PR-2601",
+          "Lumo",
+          "Lunedì",
+          "06/04/2026",
+          "09:00",
+          "10:00",
+          "Ufficio Arco",
+          "Confermata"
+        ],
+        [
+          "PR-2602",
+          "Vela",
+          "Martedì",
+          "07/04/2026",
+          "11:00",
+          "12:30",
+          "Unità Selva",
+          "Da confermare"
+        ],
+        [
+          "PR-2603",
+          "Nubi",
+          "Mercoledì",
+          "08/04/2026",
+          "14:00",
+          "15:00",
+          "Settore Brina",
+          "Confermata"
+        ],
+        [
+          "PR-2604",
+          "Riva",
+          "Giovedì",
+          "09/04/2026",
+          "10:00",
+          "11:00",
+          "Ufficio Quarzo",
+          "Confermata"
+        ],
+        [
+          "PR-2605",
+          "Lumo",
+          "Venerdì",
+          "10/04/2026",
+          "10:00",
+          "11:00",
+          "Unità Mirto",
+          "Confermata"
+        ],
+        [
+          "PR-2606",
+          "Nubi",
+          "Lunedì",
+          "06/04/2026",
+          "10:00",
+          "11:00",
+          "Settore Cobalto",
+          "Confermata"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Sala",
+        "Giorno",
+        "Data",
+        "Inizio",
+        "Fine",
+        "Richiedente",
+        "Stato"
+      ]
+    },
+    {
+      "id": "nuova-prenotazione",
+      "title": "Nuova prenotazione",
+      "description": "Registra una richiesta di utilizzo di una sala. Verifica la disponibilità nel calendario settimanale prima di confermare.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Sala",
+        "Giorno",
+        "Data",
+        "Inizio",
+        "Fine",
+        "Richiedente",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Codice",
+        "Sala",
+        "Giorno",
+        "Data",
+        "Inizio",
+        "Fine",
+        "Richiedente",
+        "Stato"
+      ]
+    }
+  ]
+}
